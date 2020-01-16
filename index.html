@@ -16,23 +16,46 @@
 		<h1>Calculator</h1>
 
 		<div class="row">
-			<h3>Addition:</h3>
-			<form id="add">
+			<h3>Enter Numbers:</h3>
+			<form id="math">
 				<div class="form-group">
-					<label for="add1">1st number:</label>
-					<input id="add1" class="form-control" type="text">
+					<label for="math1">1st number:</label>
+					<input id="math1" class="form-control" type="text">
 				</div>
 				<div class="form-group">
-					<label for="add2">2nd number:</label>
-					<input id="add2" class="form-control" type="text">
+					<label for="math2">2nd number:</label>
+					<input id="math2" class="form-control" type="text">
 				</div>
-				<button type="submit" class="btn">Add!</button>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="operator" value="1" checked> Add
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="operator" value="2"> Subtract
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="operator" value="3"> Multiply
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="operator" value="4"> Divide
+					</label>
+				</div>
+
+				<button type="submit" class="btn">Submit!</button>
 			</form>
-			<div id="addOutput"></div>
+
+			<div id="mathOutput"></div>
 		</div>
 
-
-		<div class="row">
+ 
+		<!-- <div class="row">
 			<h3>Subtraction:</h3>
 			<form id="subtract">
 				<div class="form-group">
@@ -78,7 +101,7 @@
 				<button type="submit" class="btn">Divide!</button>
 			</form>
 			<div id="divideOutput"></div>
-		</div>
+		</div> -->
 
   </div>
 </body>
